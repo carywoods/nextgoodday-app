@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Next Good Day</title>
+  <meta name="description" content="Find the best days for your activities based on weather and availability">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/static/favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div id="root"></div>
+  
+  <!-- React and ReactDOM from CDN (for MVP) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- Import individual components -->
+  <script type="text/babel" src="components/Loading.js"></script>
+  <script type="text/babel" src="components/Navbar.js"></script>
+  <script type="text/babel" src="components/Onboarding.js"></script>
+  <script type="text/babel" src="components/ActivitySelector.js"></script>
+  <script type="text/babel" src="components/Recommendations.js"></script>
+  <script type="text/babel" src="components/InviteForm.js"></script>
+  
+  <!-- Import services -->
+  <script type="text/babel" src="services/api.js"></script>
+  
+  <!-- Main app -->
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>

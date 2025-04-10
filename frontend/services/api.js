@@ -116,3 +116,8 @@ export function downloadCalendarFile(icsContent, filename) {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
+
+// Update the API_BASE_URL to use the environment variable
+const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
+
+// Rest of your API service code remains the same

@@ -12,10 +12,10 @@ import logging
 from datetime import datetime, timedelta
 import json
 
-# Import local modules
-from models import Base, User, Activity, UserActivity, Recommendation, Message
-from utils import fetch_weather_data, get_location_name, generate_ics_file, generate_invite_email, filter_activities_by_demographics
-from scoring import get_top_recommendations
+# Import local modules with correct relative imports
+from backend.models import Base, User, Activity, UserActivity, Recommendation, Message
+from backend.utils import fetch_weather_data, get_location_name, generate_ics_file, generate_invite_email, filter_activities_by_demographics
+from backend.scoring import get_top_recommendations
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -636,4 +636,3 @@ async def get_calendar_file(
 
 # Serve frontend static files
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
-

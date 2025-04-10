@@ -7,6 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 from typing import List, Optional, Dict
 from pydantic import BaseModel, EmailStr, Field
+
 import os
 import logging
 from datetime import datetime, timedelta

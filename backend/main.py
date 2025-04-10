@@ -166,3 +166,5 @@ def load_initial_activities():
                     "max_temperature": 95,
                     "avoid_rain": True,
                     "avoid_snow": True
+	    }
+} 	

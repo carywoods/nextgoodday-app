@@ -17,6 +17,15 @@
 </head>
 <body class="bg-gray-50 min-h-screen">
   <div id="root"></div>
+<!-- Add this before your other scripts -->
+<script>
+  // Make environment variables accessible to our scripts
+  window.process = {
+    env: {
+      REACT_APP_API_URL: '%%REACT_APP_API_URL%%'
+    }
+  };
+</script>
   
   <!-- React and ReactDOM from CDN (for MVP) -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
